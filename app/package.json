@@ -1,0 +1,21 @@
+{
+  "name": "latte",
+  "productName": "LATTE",
+  "version": "1.0.0",
+  "description": "Visual Smart Contract Builder: GUI for building smart contracts",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "Sean Tan",
+    "email": "sean2108@gmail.com",
+    "url": "https://github.com/Sean2108"
+  },
+  "scripts": {
+    "electron-rebuild": "node -r babel-register ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "yarn electron-rebuild"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "solc": "^0.5.9",
+    "web3": "^1.0.0-beta.55"
+  }
+}
